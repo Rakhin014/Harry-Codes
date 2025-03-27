@@ -13,86 +13,34 @@ def Game():
     print("\t    Computer has chosen ",game[pc])
     if uc == pc:
         print("It's a draw")
-        print("Do you want to play again?")
-        print("1. Yes  2. No")
-        wish = int(input("Please enter your answer: "))
-        while wish != 1 and wish != 2 :
-            print("The element you entered is invalid.\nPlease enter between 1 and 2")
-            wish = int(input())
-        if wish == 1:
-            Game()
-        if wish == 2:
-            print("OK sir, thank you for playing")
+        pg()
     elif uc == 1 and pc == 2:
         print("Your 🐍 has drunk the 🌊. You Won.")
-        print("Do you want to play again?")
-        print("1. Yes  2. No")
-        wish = int(input("Please enter your answer: "))
-        while wish != 1 and wish != 2 :
-            print("The element you entered is invalid.\nPlease enter between 1 and 2")
-            wish = int(input())
-        if wish == 1:
-            Game()
-        if wish == 2:
-            print("OK sir, thank you for playing")
+        gp()
     elif uc == 2 and pc == 1:
         print("Computer's 🐍 has drunk the 🌊. You Lost.")
-        print("Do you want to play again?")
-        print("1. Yes  2. No")
-        wish = int(input("Please enter your answer: "))
-        while wish != 1 and wish != 2 :
-            print("The element you entered is invalid.\nPlease enter between 1 and 2")
-            wish = int(input())
-        if wish == 1:
-            Game()
-        if wish == 2:
-            print("OK sir, thank you for playing")
+        pg()
     elif uc == 2 and pc == 3:
         print("Computer's 🔫 has drowned in 🌊. You Won.")
-        print("Do you want to play again?")
-        print("1. Yes  2. No")
-        wish = int(input("Please enter your answer: "))
-        while wish != 1 and wish != 2 :
-            print("The element you entered is invalid.\nPlease enter between 1 and 2")
-            wish = int(input())
-        if wish == 1:
-            Game()
-        if wish == 2:
-            print("OK sir, thank you for playing")
+        pg()
     elif uc == 3 and pc == 2:
         print("Your 🔫 has drowned in 🌊. You Lost.")
-        print("Do you want to play again?")
-        print("1. Yes  2. No")
-        wish = int(input("Please enter your answer: "))
-        while wish != 1 and wish != 2 :
-            print("The element you entered is invalid.\nPlease enter between 1 and 2")
-            wish = int(input())
-        if wish == 1:
-            Game()
-        if wish == 2:
-            print("OK sir, thank you for playing")
+        pg()
     elif uc == 1 and pc == 3:
         print("Computer's 🔫 have killed the 🐍. You Lost.")
-        print("Do you want to play again?")
-        print("1. Yes  2. No")
-        wish = int(input("Please enter your answer: "))
-        while wish != 1 and wish != 2 :
-            print("The element you entered is invalid.\nPlease enter between 1 and 2")
-            wish = int(input())
-        if wish == 1:
-            Game()
-        if wish == 2:
-            print("OK sir, thank you for playing")
+        pg()
     elif uc == 3 and pc == 1:
         print("Your 🔫 have killed the 🐍. You Won.")
-        print("Do you want to play again?")
-        print("1. Yes  2. No")
-        wish = int(input("Please enter your answer: "))
-        while wish != 1 and wish != 2 :
-            print("The element you entered is invalid.\nPlease enter between 1 and 2")
-            wish = int(input())
-        if wish == 1:
-            Game()
-        if wish == 2:
-            print("OK sir, thank you for playing")
+        pg()
+def pg():
+    print("Do you want to play again?")
+    print("1. Yes  2. No")
+    wish = int(input("Please enter your answer: "))
+    while wish != 1 and wish != 2 :
+        print("The element you entered is invalid.\nPlease enter between 1 and 2")
+        wish = int(input())
+    if wish == 1:
+        Game()
+    elif wish == 2:
+        print("OK sir, thank you for playing.")
 Game()
