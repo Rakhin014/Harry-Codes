@@ -16,7 +16,7 @@ def Game():
         pg()
     elif uc == 1 and pc == 2:
         print("Your 🐍 has drunk the 🌊. You Won.")
-        gp()
+        pg()
     elif uc == 2 and pc == 1:
         print("Computer's 🐍 has drunk the 🌊. You Lost.")
         pg()
